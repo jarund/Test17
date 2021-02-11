@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_web_environment_ribbon_backend,access.web.environment.ribbon.backend,model_web_environment_ribbon_backend,base.group_user,1,1,1,1
