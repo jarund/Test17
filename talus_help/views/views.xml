@@ -13,21 +13,21 @@
 
         <!-- Inventory -->
         <record id="action_talus_iorad_iframe_inv" model="ir.actions.client">
-            <field name="name">IORAD</field>
+            <field name="name">Inventory Help</field>
             <field name="tag">iorad_iframe_inv</field>
             <field name="target">current</field>
         </record>
 
         <!-- Inventory(Admin) -->
         <record id="action_talus_iorad_iframe_invadmin" model="ir.actions.client">
-            <field name="name">IORAD</field>
+            <field name="name">Inventory Help Admin</field>
             <field name="tag">iorad_iframe_invadmin</field>
             <field name="target">current</field>
         </record>
 
         <!-- settings -->
         <record id="action_talus_iorad_iframe_settings" model="ir.actions.client">
-            <field name="name">IORAD</field>
+            <field name="name">Settings Help</field>
             <field name="tag">iorad_iframe_settings</field>
             <field name="target">current</field>
         </record>
