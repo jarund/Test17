@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+
+
+        <record id="view_stock_move_line_inherited_inheried" model="ir.ui.view">
+            <field name="name">stock.move.line.inherited.view.tree</field>
+            <field name="model">stock.move.line</field>
+            <field name="inherit_id" ref="stock.view_stock_move_line_detailed_operation_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_uom_id']" position="after">
+                <button string="Take Weight" class="oe_highlight" type="object" name="get_weight"/>
+                </xpath>
+                 
+            </field>
+        </record>
+        <record id="view_stock_move_line_inherited_" model="ir.ui.view">
+            <field name="name">stock.move.line.view.tree</field>
+            <field name="model">stock.move.line</field>
+            <field name="inherit_id" ref="stock.view_stock_move_line_operation_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_uom_id']" position="after">
+                <field name="scrap_id" invisible="1"/>
+                <button string="Take Weight" class="oe_highlight" type="object" name="get_weight"/>
+                </xpath>
+                 
+            </field>
+        </record>
+        
+        <record id="view_stock_move_line_form_inherited_" model="ir.ui.view">
+            <field name="name">stock.move.line.view.form</field>
+            <field name="model">stock.move.line</field>
+            <field name="inherit_id" ref="stock.view_move_line_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='origin']" position="after">
+                 <field name="scrap_id" invisible="1"/>
+                <field name="webcam_image" widget="image" />
+                </xpath>
+                 
+            </field>
+        </record>
+	</data>
+    <template id="assets_backends_serial" inherit_id="web.assets_backend" name="Serial Port for Platforms Backend Assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="sgb_get_weight/static/src/js/serial_port.js"></script>
+        </xpath>
+    </template>
+</odoo>

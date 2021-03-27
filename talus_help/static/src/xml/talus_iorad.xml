@@ -1,0 +1,54 @@
+<templates>
+
+    <!-- Inventory -->
+    <t t-name="TalusIoradIframeViewInv">
+        <form string="Embedded Webpage" version="7.0" edit="false" create="false">
+            <center>
+                <!-- System parameter help_inventory.url  -->
+                <iframe src=""
+                        id="iframeinventory"
+                        width="100%" height="750px"
+                        style="width: 100%; height: 700px"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        frameborder="0" webkitallowfullscreen="webkitallowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen">
+                </iframe>
+            </center>
+        </form>
+    </t>
+
+    <!-- Inventory(Admin) -->
+    <t t-name="TalusIoradIframeViewInvAdmin">
+        <form string="Embedded Webpage" version="7.0" edit="false" create="false">
+            <center>
+                <!-- System parameter help_inventoryadmin.url  -->
+                <iframe src=""
+                        id="iframeinventoryadmin"
+                        width="100%" height="750px"
+                        style="width: 100%; height: 700px"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        frameborder="0" webkitallowfullscreen="webkitallowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen">
+                </iframe>
+            </center>
+        </form>
+    </t>
+
+    <!-- settings -->
+    <t t-name="TalusIoradIframeViewSettings">
+        <form string="Embedded Webpage" version="7.0" edit="false" create="false">
+            <center>
+                <!-- System parameter help_settings.url -->
+                <iframe src=""
+                        id="iframesettings"
+                        width="100%" height="750px"
+                        style="width: 100%; height: 700px"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        frameborder="0" webkitallowfullscreen="webkitallowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen">
+                </iframe>
+            </center>
+        </form>
+    </t>
+
+</templates>

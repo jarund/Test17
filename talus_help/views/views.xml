@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <template id="talus_iorad_assets_backend" name="talus_iorad assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <!-- Inventory -->
+                <script type="text/javascript" src="/talus_help/static/src/js/talus_iorad_inv.js"></script>
+                <!-- Inventory(Admin) -->
+                <script type="text/javascript" src="/talus_help/static/src/js/talus_iorad_invadmin.js"></script>
+                <!-- settings -->
+                <script type="text/javascript" src="/talus_help/static/src/js/talus_iorad_settings.js"></script>
+            </xpath>
+        </template>
+
+        <!-- Inventory -->
+        <record id="action_talus_iorad_iframe_inv" model="ir.actions.client">
+            <field name="name">IORAD</field>
+            <field name="tag">iorad_iframe_inv</field>
+            <field name="target">current</field>
+        </record>
+
+        <!-- Inventory(Admin) -->
+        <record id="action_talus_iorad_iframe_invadmin" model="ir.actions.client">
+            <field name="name">IORAD</field>
+            <field name="tag">iorad_iframe_invadmin</field>
+            <field name="target">current</field>
+        </record>
+
+        <!-- settings -->
+        <record id="action_talus_iorad_iframe_settings" model="ir.actions.client">
+            <field name="name">IORAD</field>
+            <field name="tag">iorad_iframe_settings</field>
+            <field name="target">current</field>
+        </record>
+
+        <!-- Inventory -->
+        <menuitem name="Help" sequence="250" id="talus_help.menu_inv" parent="stock.menu_stock_root" action="talus_help.action_talus_iorad_iframe_inv"/>
+        <!-- Inventory(Admin) -->
+        <menuitem name="Help Admin" sequence="255" id="talus_help.menu_invadmin" parent="stock.menu_stock_root" action="talus_help.action_talus_iorad_iframe_invadmin"/>
+        <!-- Sales -->
+        <menuitem name="Help" sequence="250" id="talus_help.menu_settings" parent="base.menu_administration" action="talus_help.action_talus_iorad_iframe_settings"/>
+
+
+    </data>
+</odoo>

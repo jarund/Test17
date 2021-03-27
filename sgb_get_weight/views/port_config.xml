@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="ir.ui.view" id="ir_port_form_view">
+            <field name="model">sgb.port</field>
+            <field name="arch" type="xml">
+                <form string="Port">
+                <sheet>
+                  <header>
+                        <button name="action_port_check" type="object" string="Check Ports"/>
+                    </header>
+                    <group name="creation_details" string="Creation details">
+                       <field name="name" />
+                        <field name="ip_address" />
+                        <field name="port_number" />
+                        <field name="serial_port" />
+                        <field name="api_url" />
+                        <field name="baudrate" />
+                        <field name="bytesize" />
+                        <field name="timeout" />
+                        <field name="stopbits" />
+                        <field name="active" />
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="ir_port_tree_view">
+            <field name="model">sgb.port</field>
+            <field name="arch" type="xml">
+                <tree string="Logs">
+                    <field name="name" />
+                    <field name="ip_address" />
+                    <field name="port_number" />
+                    <field name="serial_port" />
+                    <field name="api_url" />
+                     <field name="baudrate" />
+                        <field name="bytesize" />
+                        <field name="timeout" />
+                        <field name="stopbits" />
+                    <field name="active" />
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="ir_port_all_act">
+            <field name="name">Ports</field>
+            <field name="res_model">sgb.port</field>
+            <field name="view_mode">tree,form</field>
+<!--            <field name="search_view_id" ref="ir_logging_search_view" />-->
+        </record>
+
+        <menuitem id="ir_port_all_menu" name="Ports" action="ir_port_all_act" parent="stock.menu_stock_root"/>
+
+</odoo>

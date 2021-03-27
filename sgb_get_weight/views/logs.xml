@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="ir.ui.view" id="ir_logging_form_view">
+            <field name="model">sgb.logging</field>
+            <field name="arch" type="xml">
+                <form string="Log">
+                <sheet>
+                    <group name="creation_details" string="Creation details">
+                        <field name="create_date" />
+                        <field name="message" />
+                        <field name="name" />
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="ir_logging_tree_view">
+            <field name="model">sgb.logging</field>
+            <field name="arch" type="xml">
+                <tree string="Logs">
+                    <field name="create_date" />
+                    <field name="message" />
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="ir_logging_all_act">
+            <field name="name">Logs</field>
+            <field name="res_model">sgb.logging</field>
+            <field name="view_mode">tree,form</field>
+<!--            <field name="search_view_id" ref="ir_logging_search_view" />-->
+        </record>
+        <menuitem id="ir_logging_all_menu" name="Logs" action="ir_logging_all_act" parent="stock.menu_stock_root"/>
+
+</odoo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="deliveryslip_report_inherit" inherit_id="stock.report_delivery_document">
+        <!-- Add "Delivery To" about address -->
+        <xpath expr="//div[@t-esc='partner']" position="before">
+            <strong>Delivery Address:</strong>
+        </xpath>
+        <!-- Add Custom fields for CMC above products table -->
+        <xpath expr="//div[@class='row mt32 mb32']" position="replace">
+            <div class="row mt32 mb32">
+                <!-- Carrier -->
+                <div t-if="o.cmc_carrier_ids" class="col-auto" name="div_carrier">
+                    <strong>Carrier:</strong>
+                    <p t-field="o.cmc_carrier_ids"/>
+                </div>
+                <!-- Load Date -->
+                <div t-if="o.cmc_load_date" class="col-auto" name="div_cmc_load_date">
+                    <strong>Load Date:</strong>
+                    <p t-field="o.cmc_load_date"/>
+                </div>
+                <!-- Ship Date -->
+                <div t-if="o.cmc_truck_nbr" class="col-auto" name="div_cmc_truck_nbr">
+                    <strong>Ship Date:</strong>
+                    <p t-field="o.cmc_ship_date"/>
+                </div>
+            </div>
+            <div class="row mt32 mb32">
+                <!-- Truck Nbr -->
+                <div t-if="o.cmc_truck_nbr" class="col-auto" name="div_cmc_truck_nbr">
+                    <strong>Truck Nbr:</strong>
+                    <p t-field="o.cmc_truck_nbr"/>
+                </div>
+                <!-- Trailer Nbr -->
+                <div t-if="o.cmc_trailer_number" class="col-auto" name="div_cmc_trailer_number">
+                    <strong>Trailer Nbr:</strong>
+                    <p t-field="o.cmc_trailer_number"/>
+                </div>
+                <!-- Seal Nbr -->
+                <div t-if="o.cmc_seal_number" class="col-auto" name="div_cmc_seal_number">
+                    <strong>Seal Nbr:</strong>
+                    <p t-field="o.cmc_seal_number"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

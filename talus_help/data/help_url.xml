@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<!--values for system parameters-->
+    <!-- Inventory  -->
+    <record id="help_inventory_url" model="ir.config_parameter">
+        <field name="key">help_inventory.url</field>
+        <field name="value">Enter Inventory Help URL here</field>
+    </record>
+    <!-- Inventory(Admin)  -->
+    <record id="help_inventoryadmin_url" model="ir.config_parameter">
+        <field name="key">help_inventoryadmin.url</field>
+        <field name="value">Enter Inventory Help(Admin) URL here</field>
+    </record>
+    <!-- Settings -->
+    <record id="help_settings_url" model="ir.config_parameter">
+        <field name="key">help_settings.url</field>
+        <field name="value">Enter Settings Help URL here</field>
+    </record>   
+
+</odoo>
