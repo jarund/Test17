@@ -1,0 +1,260 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cmc_scrap_tracking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-26 12:17+0000\n"
+"PO-Revision-Date: 2021-03-26 09:59-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__cmc_carrier_ids
+msgid "Carrier"
+msgstr "Transportadora"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__name
+msgid "Carrier ID"
+msgstr "Transportadora ID"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__description
+msgid "Carrier Name"
+msgstr "Nombre de la compañía"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__name
+msgid "Carrier Type"
+msgstr "Tipo de transportista"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_cmc_carriers
+msgid "Carriers"
+msgstr "Transportistas"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__cmc_container
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_production_lot__cmc_container
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__cmc_lot_container
+msgid "Container"
+msgstr "Envase"
+
+#. module: cmc_scrap_tracking
+#: model:ir.ui.menu,name:cmc_scrap_tracking.container_qty_list
+msgid "Container Qty List"
+msgstr "Lista de cantidad de contenedores"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_product_product__cmc_container_type_ids
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_product_template__cmc_container_type_ids
+msgid "Container Type"
+msgstr "Tipo de contenedor"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_container_types
+msgid "Container Types"
+msgstr "Tipos de contenedores"
+
+#. module: cmc_scrap_tracking
+#: model:ir.actions.act_window,name:cmc_scrap_tracking.container_qty_action_window
+msgid "Container Weight List"
+msgstr "Lista de peso del contenedor"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__create_uid
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__create_date
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__display_name
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__display_name
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__display_name
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_product_template__display_name
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_production_lot__display_name
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__quantity
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__cmc_lot_gross_weight
+msgid "Gross Weight"
+msgstr "Peso bruto"
+
+#. module: cmc_scrap_tracking
+#: model_terms:ir.ui.view,arch_db:cmc_scrap_tracking.ship_container_report_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_product_template__id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_production_lot__id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__id
+msgid "ID"
+msgstr ""
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers____last_update
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report____last_update
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types____last_update
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_product_template____last_update
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_production_lot____last_update
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__write_uid
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__write_date
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__cmc_load_date
+msgid "Load Date"
+msgstr "Fecha de carga"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__location_id
+#: model_terms:ir.ui.view,arch_db:cmc_scrap_tracking.ship_container_report_search
+msgid "Location"
+msgstr "Localización"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__lot_id
+msgid "Lot#"
+msgstr "Lote#"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_stock_production_lot
+msgid "Lot/Serial"
+msgstr "Lote / Serie"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__cmc_net_weight
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_production_lot__cmc_net_weight
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__cmc_lot_net_weight
+msgid "Net Weight"
+msgstr "Peso neto"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_container_types__product_ids
+msgid "Product"
+msgstr "Producto"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__categ_id
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__product_category
+msgid "Product Category"
+msgstr "categoria de producto"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_stock_quant
+msgid "Quants"
+msgstr ""
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__product_id
+msgid "Scarp"
+msgstr "Escarpa"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__cmc_seal_number
+msgid "Seal Number"
+msgstr "Número de sello"
+
+#. module: cmc_scrap_tracking
+#: model_terms:ir.ui.view,arch_db:cmc_scrap_tracking.ship_container_report_search
+msgid "Search"
+msgstr "Buscar"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,help:cmc_scrap_tracking.field_stock_quant__product_category
+msgid "Select category for the current product"
+msgstr "Seleccionar categoría para el producto actual"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__cmc_ship_date
+msgid "Ship Date"
+msgstr "Fecha de envío"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_carriers__shipment_ids
+msgid "Shipment"
+msgstr "Envío"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__cmc_tare_weight
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_production_lot__cmc_tare_weight
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_quant__cmc_lot_tare_weight
+msgid "Tare Weight"
+msgstr "Peso de tara"
+
+#. module: cmc_scrap_tracking
+#: model_terms:ir.ui.view,arch_db:cmc_scrap_tracking.ship_container_report
+msgid "Total Gross Weight"
+msgstr "Peso bruto total"
+
+#. module: cmc_scrap_tracking
+#: model_terms:ir.ui.view,arch_db:cmc_scrap_tracking.ship_container_report
+msgid "Total Net Weight"
+msgstr "Peso neto total"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__cmc_trailer_number
+msgid "Trailer Number"
+msgstr "Número de remolque"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_stock_picking__cmc_truck_nbr
+msgid "Truck Number"
+msgstr "Numero de camion"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model.fields,field_description:cmc_scrap_tracking.field_cmc_container_report__uom_id
+msgid "UOM"
+msgstr "UOM"
+
+#. module: cmc_scrap_tracking
+#: model:ir.model,name:cmc_scrap_tracking.model_cmc_container_report
+msgid "Used for CMC Container Report"
+msgstr "Utilizado para el informe de contenedor de CMC"
